@@ -1,0 +1,151 @@
+.country-details-card{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.flag-wrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flag-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+
+.country-details-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 20px;
+}
+
+.details-span-strong{
+    font-weight: 600;
+}
+
+.details-seperator-main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.details-seperator{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.details-seperator p{
+    padding: 0;
+    margin: 5px;
+}
+
+.border-country{
+    width: 100px;
+    height: 40px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.border-countries{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .border-countries-dark{
+    background-color: hsl(209, 23%, 22%);
+} */
+
+.border-countries-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.border-country-dark{
+    background-color: hsl(209, 23%, 22%);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .country-details-card{
+        flex-direction: column;
+        gap: 2rem;
+        height: 100%;
+    }
+
+    .flag-wrapper{
+        width: 100%;
+        height: 50%;
+    }
+
+    .country-details-wrapper{
+        width: 100%;
+        height: 50%;
+    }
+
+    .border-countries-wrapper{
+        width: 100%;
+        height: 50%;
+    }
+
+    .border-countries{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .border-country{
+        margin: 0;
+        margin-right: 0;
+    }
+
+    .details-seperator-main{
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .details-seperator{
+        width: 100%;
+    }
+
+    .details-seperator p{
+        margin: 0;
+    }
+    .border-country{
+        margin: 0;
+        margin-right: 0;
+        width: 50px;
+        height: 30px;
+    }
+    
+}

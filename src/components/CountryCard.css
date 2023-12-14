@@ -1,0 +1,38 @@
+
+.country-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.country-card-wrapper > img {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.flag-img-wrapper{
+    width: min-content;
+    height: min-content;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.country-info{
+    padding: 1rem;
+}
+
+.country-population-heading, .country-region-heading, .country-capital-heading{
+    font-weight: 600;
+}
+
+.country-info-dark{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(209, 23%, 22%);
+}
+
+.country-card-wrapper-dark{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
